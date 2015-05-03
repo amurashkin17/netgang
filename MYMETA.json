@@ -1,0 +1,71 @@
+{
+   "abstract" : "netgang provides high availability for heterogeneous network interfaces",
+   "author" : [
+      "\"Alexander Murashkin\", C<< <\"AlexanderMurashkin at msn.com\"> >>",
+      "\"Alexander Murashkin\" <\"AlexanderMurashkin@msn.com\">"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.132140",
+   "license" : [
+      "open_source"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "netgang",
+   "no_index" : {
+      "directory" : [
+         "inc",
+         "sbin",
+         "share",
+         "t"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.59",
+            "Module::Install" : "0",
+            "Module::Install::Any" : "0",
+            "Test::More" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.59",
+            "Module::Install" : "0",
+            "Module::Install::Any" : "0"
+         }
+      },
+      "runtime" : {
+         "recommends" : {
+            "Log::Dispatch::Syslog" : "0",
+            "Log::Log4perl" : "1.42",
+            "Log::Log4perl::Appender::File" : "0",
+            "Log::Log4perl::Appender::Journald" : "0",
+            "Log::Log4perl::Appender::Screen" : "0",
+            "Log::Log4perl::Appender::ScreenColoredLevels" : "0",
+            "Proc::Daemon" : "0.19",
+            "Systemd::Daemon" : "0.06"
+         },
+         "requires" : {
+            "Exception::Class" : "1.37",
+            "Net::Netmask" : "1.9015",
+            "Text::CSV" : "1.3",
+            "Try::Tiny" : "0.18",
+            "perl" : "5.006"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "http://rt.cpan.org/NoAuth/Bugs.html?Dist=NetworkGang"
+      },
+      "license" : [
+         "http://www.perlfoundation.org/artistic_license_2_0"
+      ]
+   },
+   "version" : "1.1.1"
+}
